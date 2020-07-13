@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Formulario de calculo</title>
+        <script type="text/javascript" src="app.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div class="header">
+                <h2 id="formTitle">Calculador de medidas de desempeño de sistema MM1:</h2>
+            </div>
+            <div class="main">
+                <form name="form1">
+                    <label for="lambda">Lambda (Velocidad de llegada)</label> <br>
+                    <input id="lambda" type="number" name="lambda" placeholder="ingrese valor del Lambda"> <br>
+                    <label for="Mu">Mu (Velocidad de servicio)</label> <br>
+                    <input id="mu" type="number" name="mu" placeholder="ingrese valor de Mu">
+                    <ul>
+                        <li>Factor de uso del sistema (p): <span id="listRo" class="spanstyle"></span> </li>
+                        <li>Nro de unidades en el sistema (Ls): <span id="listLs" class="spanstyle"></span></li>
+                        <li>Tiempo de unidad en el sistema (Ws): <span id="listWs" class="spanstyle"></span></li>
+                        <li>Nro. promedio de unidades en la cola (Lq): <span id="listLq" class="spanstyle"></span></li>
+                        <li>Tiempo de espera de una unidad en la cola (Wq): <span id="listWq" class="spanstyle"></span>
+                        </li>
+                        <li>Probabilidad de que el sistema este vacio (P0): <span id="listP0" class="spanstyle"></span>
+                        </li>
+                    </ul>
+                    <button type="submit" id="send">Calcular</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

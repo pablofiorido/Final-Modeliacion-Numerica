@@ -8,11 +8,13 @@
         <link rel="stylesheet" href="style.css">
         <title>Formulario de calculo</title>
         <script type="text/javascript" src="app.js"></script>
+
     </head>
     <body>
         <div id="container">
             <div class="header">
-                <h2 id="formTitle">Calculador de medidas de desempeño de sistema MM1:</h2>
+                <h1 id="formTitle">Teoria de colas:</h1>
+                <h2 id="formTitle">Calculadora de medidas de desempeño del sistema MM1:</h2>
             </div>
             <div class="main">
                 <form name="form1">
@@ -31,6 +33,27 @@
                         </li>
                     </ul>
                     <button type="submit" id="send">Calcular</button>
+                </form>
+                <h2>___________________________________________________________________</h2>
+                <div class="header">
+                    <h2 id="formTitle">Calculadora de medidas de desempeño del sistema MD1:</h2>
+                </div>
+                <form name="form2">
+                    <label for="lambda2">Lambda (Velocidad de llegada)</label> <br>
+                    <input id="lambda2" type="number" name="lambda" placeholder="ingrese valor del Lambda"> <br>
+                    <label for="Mu2">Mu (Velocidad de servicio)</label> <br>
+                    <input id="mu2" type="number" name="mu" placeholder="ingrese valor de Mu">
+                    <ul>
+                        <li>Factor de uso del sistema (p): <span id="listRo2" class="spanstyle"></span> </li>
+                        <li>Nro de unidades en el sistema (Ls): <span id="listLs2" class="spanstyle"></span></li>
+                        <li>Tiempo de unidad en el sistema (Ws): <span id="listWs2" class="spanstyle"></span></li>
+                        <li>Nro. promedio de unidades en la cola (Lq): <span id="listLq2" class="spanstyle"></span></li>
+                        <li>Tiempo de espera de una unidad en la cola (Wq): <span id="listWq2" class="spanstyle"></span>
+                        </li>
+                        <li>Probabilidad de que el sistema este vacio (P0): <span id="listP02" class="spanstyle"></span>
+                        </li>
+                    </ul>
+                    <button type="submit" id="send2">Calcular</button>
                 </form>
             </div>
         </div>
